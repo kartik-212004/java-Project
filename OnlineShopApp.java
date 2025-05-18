@@ -105,7 +105,7 @@ public class OnlineShopApp {
         JLabel nameLabel = new JLabel(product.getName());
         nameLabel.setFont(new Font("Arial", Font.BOLD, 14));
         
-        JLabel priceLabel = new JLabel(String.format("$%.2f", product.getPrice()));
+        JLabel priceLabel = new JLabel(String.format("₹%.2f", product.getPrice()));
         
         JLabel descLabel = new JLabel(product.getDescription());
         descLabel.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -140,7 +140,7 @@ public class OnlineShopApp {
         JPanel cartItemsPanel = new JPanel();
         cartItemsPanel.setLayout(new BoxLayout(cartItemsPanel, BoxLayout.Y_AXIS));
         
-        totalLabel = new JLabel("Total: $0.00");
+        totalLabel = new JLabel("Total: ₹0.00");
         totalLabel.setFont(new Font("Arial", Font.BOLD, 16));
         
         checkoutButton = new JButton("Checkout");
@@ -179,7 +179,7 @@ public class OnlineShopApp {
         scrollPane.setViewportView(cartItemsPanel);
         
         // Update total
-        totalLabel.setText(String.format("Total: $%.2f", totalAmount));
+        totalLabel.setText(String.format("Total: ₹%.2f", totalAmount));
         
         // Enable checkout button if cart is not empty
         checkoutButton.setEnabled(!cart.isEmpty());
@@ -196,7 +196,7 @@ public class OnlineShopApp {
         panel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 50));
         
         JLabel nameLabel = new JLabel(product.getName());
-        JLabel priceLabel = new JLabel(String.format("$%.2f", product.getPrice()));
+        JLabel priceLabel = new JLabel(String.format("₹%.2f", product.getPrice()));
         
         JButton removeButton = new JButton("Remove");
         removeButton.addActionListener(new ActionListener() {
@@ -236,10 +236,10 @@ public class OnlineShopApp {
         message.append("Order Summary:\n");
         
         for (Product product : cart) {
-            message.append(String.format("- %s: $%.2f\n", product.getName(), product.getPrice()));
+            message.append(String.format("- %s: ₹%.2f\n", product.getName(), product.getPrice()));
         }
         
-        message.append(String.format("\nTotal Amount: $%.2f", totalAmount));
+        message.append(String.format("\nTotal Amount: ₹%.2f", totalAmount));
         
         JOptionPane.showMessageDialog(frame, message.toString(), "Order Confirmation", JOptionPane.INFORMATION_MESSAGE);
         
