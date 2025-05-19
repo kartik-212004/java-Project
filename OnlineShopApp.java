@@ -45,7 +45,7 @@ public class OnlineShopApp {
         }
         
         // Create and set up the window
-        frame = new JFrame("Amazon-Style Shop");
+        frame = new JFrame(" UTU MART ");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 700);
         frame.setLayout(new BorderLayout());
@@ -84,7 +84,7 @@ public class OnlineShopApp {
         headerPanel.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
         
         // Logo/Title
-        JLabel headerLabel = new JLabel("Amazon-Style Shop");
+        JLabel headerLabel = new JLabel(" UTU MART ");
         headerLabel.setFont(new Font("Arial", Font.BOLD, 24));
         headerLabel.setForeground(Color.WHITE);
         
@@ -146,7 +146,7 @@ public class OnlineShopApp {
         footerPanel.setBackground(AMAZON_BLUE);
         footerPanel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
         
-        JLabel footerLabel = new JLabel("© 2023 Amazon-Style Shop. All rights reserved.");
+        JLabel footerLabel = new JLabel("© 2025 UTU MART. All rights reserved.");
         footerLabel.setForeground(Color.WHITE);
         footerPanel.add(footerLabel);
         
@@ -156,15 +156,14 @@ public class OnlineShopApp {
     private void initializeData() {
         // Initialize product list with some sample products
         products = new ArrayList<>();
-        products.add(new Product("Laptop", 899.99, "High-performance laptop with 16GB RAM", "images/laptop.jpg"));
-        products.add(new Product("Smartphone", 499.99, "Latest model with 128GB storage", "images/smartphone.jpg"));
-        products.add(new Product("Headphones", 89.99, "Noise-cancelling wireless headphones", "images/headphones.jpeg"));
-        products.add(new Product("Tablet", 299.99, "10-inch tablet with HD display", "images/tablet.jpeg"));
-        products.add(new Product("Bluetooth Speaker", 59.99, "Portable speaker with 10-hour battery life", "images/speaker.jpeg"));
-        products.add(new Product("Smart Watch", 199.99, "Fitness tracker with heart rate monitor", null));
-        products.add(new Product("Wireless Mouse", 29.99, "Ergonomic design with long battery life", null));
-        products.add(new Product("External SSD", 119.99, "1TB high-speed portable storage", null));
-        
+        products.add(new Product("Laptop", 800000, "High-performance laptop with 16GB RAM", "images/laptop.jpg"));
+        products.add(new Product("Utu Campus", 500000000, "4 acres of land with stunning utu campus , perfect place for destination weddings", "images/utu-building.jpeg"));
+        products.add(new Product("Utu Dress", 919.99, "Blue and Black plain dress (no entry without sport shoes) ", "images/utu-uniform.jpeg"));
+        products.add(new Product("Stationary",500.99, "Pen , Pencil , Books and many more( still u aint gonna study🤣 ) ", "images/stationary.jpg"));
+        products.add(new Product("Smartphone", 14000, "Latest model with 128GB storage", "images/smartphone.jpg"));
+        products.add(new Product("Headphones", 28000, "Noise-cancelling wireless headphones", "images/headphones.jpeg"));
+        products.add(new Product("Tablet", 70000, "10-inch tablet with HD display", "images/tablet.jpeg"));
+        products.add(new Product("Bluetooth Speaker", 7800, "Portable speaker with 10-hour battery life", "images/speaker.jpeg"));
         // Initialize empty cart
         cart = new ArrayList<>();
     }
@@ -504,7 +503,7 @@ public class OnlineShopApp {
             emptyCartPanel.setOpaque(false);
             emptyCartPanel.setBorder(BorderFactory.createEmptyBorder(30, 0, 0, 0));
             
-            JLabel emptyLabel = new JLabel("Your Amazon Cart is empty");
+            JLabel emptyLabel = new JLabel("Your UTU MART Cart is empty");
             emptyLabel.setFont(new Font("Arial", Font.BOLD, 16));
             emptyLabel.setHorizontalAlignment(JLabel.CENTER);
             
